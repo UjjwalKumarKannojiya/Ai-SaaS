@@ -224,9 +224,3 @@ export function createVideoRecord(
 export function listVideoRecords(jwt: string): Promise<StrapiVideoRecord[]> {
   return strapiList(jwt, "/api/videos", "24");
 }
-}
-
-
-export function listVideoRecords(jwt: string): Promise<StrapiVideoRecord[]> {
-  return strapiList(jwt, "/api/videos", "24");
-}
