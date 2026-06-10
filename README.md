@@ -715,23 +715,6 @@ Do not use npm run develop in production.
 
 ---
 
-## 📊 Repository Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=UjjwalKumarKannojiya&repo=Ai-SaaS&theme=tokyonight&hide_border=true&bg_color=020617&title_color=8B5CF6&text_color=E5E7EB&icon_color=06B6D4" />
-
-<br />
-<br />
-
-<img src="https://github-readme-stats.vercel.app/api?username=UjjwalKumarKannojiya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=020617&title_color=8B5CF6&text_color=E5E7EB&icon_color=06B6D4" />
-
-<br />
-<br />
-
-<img src="https://streak-stats.demolab.com?user=UjjwalKumarKannojiya&theme=tokyonight&hide_border=true&background=020617&ring=8B5CF6&fire=06B6D4&currStreakLabel=E5E7EB" />
-
-</div>
 
 ---
 
