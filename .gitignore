@@ -1,0 +1,129 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*~
+
+# =========================
+# Secrets / Environment
+# =========================
+.env
+.env.*
+!.env.example
+!**/.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+**/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# =========================
+# Next.js / Frontend
+# =========================
+.next/
+frontend/.next/
+out/
+frontend/out/
+.vercel/
+frontend/.vercel/
+next-env.d.ts
+*.tsbuildinfo
+
+# =========================
+# Strapi / Backend
+# =========================
+.strapi/
+**/.strapi/
+.strapi-updater.json
+.strapi-cloud.json
+exports/
+license.txt
+public/uploads/*
+!public/uploads/.gitkeep
+strapi-ai-saas/public/uploads/*
+!strapi-ai-saas/public/uploads/.gitkeep
+
+# =========================
+# Build / Cache
+# =========================
+dist/
+build/
+.cache/
+.tmp/
+coverage/
+.eslintcache
+.tsbuildinfo
+
+# =========================
+# Logs / Databases
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.sql
+*.sqlite
+*.sqlite3
+
+# =========================
+# Generated AI media
+# =========================
+frontend/public/generated-images/
+frontend/public/generated-videos/
+
+# =========================
+# Packages / Binary files
+# =========================
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.out
+*.pid
+*.cab
+*.msi
+*.msm
+*.msp
