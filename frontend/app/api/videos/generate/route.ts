@@ -7,7 +7,7 @@ import { getAuthToken, getCurrentUser } from "@/lib/auth";
 import { createVideoRecord } from "@/lib/strapi";
 
 export const runtime = "nodejs";
-export const maxDuration = 300;
+export const maxDuration = 200;
 
 const VIDEO_MODEL = "veo-2.0-generate-001";
 
