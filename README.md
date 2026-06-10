@@ -1,179 +1,279 @@
-<!--
-  FluxForge README
-  Safe note: this README intentionally contains no real API keys, tokens, .env values, or deployment secrets.
--->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:09090b,45:7c3aed,100:06b6d4&text=FluxForge&fontColor=ffffff&fontSize=58&fontAlignY=38&desc=Full-Stack%20AI%20SaaS%20Platform&descAlignY=58&animation=fadeIn" alt="FluxForge animated banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0f172a,35:4f46e5,70:7c3aed,100:06b6d4&text=FluxForge&fontColor=ffffff&fontSize=68&fontAlignY=38&desc=Full-Stack%20AI%20SaaS%20Platform&descAlignY=58&animation=fadeIn" width="100%" />
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=22D3EE&center=true&vCenter=true&width=900&lines=AI+Chat+%E2%9C%A6+Image+Generation+%E2%9C%A6+Video+Workflow;Next.js+16+%2B+React+19+%2B+Strapi+5;Secure+Auth+%2B+CMS+Backend+%2B+Premium+UI;Built+for+Production-Ready+AI+SaaS" alt="Typing animation" />
-
-<br />
-<br />
-
-<a href="https://github.com/UjjwalKumarKannojiya/Ai-SaaS/stargazers"><img src="https://img.shields.io/github/stars/UjjwalKumarKannojiya/Ai-SaaS?style=for-the-badge&logo=github&color=7c3aed" alt="stars" /></a>
-<a href="https://github.com/UjjwalKumarKannojiya/Ai-SaaS/network/members"><img src="https://img.shields.io/github/forks/UjjwalKumarKannojiya/Ai-SaaS?style=for-the-badge&logo=github&color=06b6d4" alt="forks" /></a>
-<a href="https://github.com/UjjwalKumarKannojiya/Ai-SaaS"><img src="https://img.shields.io/github/repo-size/UjjwalKumarKannojiya/Ai-SaaS?style=for-the-badge&color=22c55e" alt="repo size" /></a>
-<a href="https://github.com/UjjwalKumarKannojiya/Ai-SaaS/commits/main"><img src="https://img.shields.io/github/last-commit/UjjwalKumarKannojiya/Ai-SaaS?style=for-the-badge&color=f59e0b" alt="last commit" /></a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=AI+Chat+%E2%80%A2+Image+Generation+%E2%80%A2+Video+Generation+%E2%80%A2+Code+Assistant;Next.js+16+%2B+React+19+%2B+Tailwind+CSS+v4+%2B+Strapi;Production+Ready+AI+SaaS+Deployed+on+Vercel+%2B+Render" alt="Typing SVG" />
 
 <br />
 <br />
 
-<b>FluxForge</b> is a modern AI-SaaS application with a premium Next.js frontend, Strapi CMS backend, secure authentication, AI image generation, AI chat workflow, and billing-aware video generation flow.
+<a href="https://fluxforge.vercel.app">
+  <img src="https://img.shields.io/badge/Live-Demo-7c3aed?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+<a href="https://github.com/UjjwalKumarKannojiya/Ai-SaaS">
+  <img src="https://img.shields.io/badge/GitHub-Repository-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
 
 </div>
+
+---
+
+# 🚀 FluxForge — Full-Stack AI SaaS Platform
+
+**FluxForge** is a modern full-stack AI SaaS platform built with **Next.js**, **React**, **Tailwind CSS**, **Strapi**, and multiple AI integrations. It provides a clean authenticated workspace where users can generate AI chat responses, images, videos, and coding assistance from one dashboard.
+
+The project was built as a production-ready AI SaaS architecture with frontend deployment on **Vercel**, backend deployment on **Render**, and Strapi-powered content storage.
+
+---
+
+## 🌐 Live Links
+
+| Type                 | Link                                            |
+| -------------------- | ----------------------------------------------- |
+| 🚀 Live Frontend     | https://fluxforge.vercel.app                    |
+| 💻 GitHub Repository | https://github.com/UjjwalKumarKannojiya/Ai-SaaS |
+| ⚙️ Backend Service   | Render Strapi backend                           |
+| 🗄️ Database         | PostgreSQL / Render / Neon compatible           |
 
 ---
 
 ## ✨ Project Highlights
 
-<table>
-  <tr>
-    <td><b>🚀 Full-Stack SaaS</b></td>
-    <td>Next.js frontend + Strapi backend with clean separation of concerns.</td>
-  </tr>
-  <tr>
-    <td><b>🤖 AI Features</b></td>
-    <td>AI chat, Hugging Face image generation, and Google Veo video route support.</td>
-  </tr>
-  <tr>
-    <td><b>🔐 Secure Auth</b></td>
-    <td>JWT-based auth flow with protected dashboard pages and Strapi user integration.</td>
-  </tr>
-  <tr>
-    <td><b>🎨 Premium UI</b></td>
-    <td>shadcn/ui, Tailwind CSS v4, theme support, animated AI elements, and responsive layouts.</td>
-  </tr>
-  <tr>
-    <td><b>🧠 CMS Powered</b></td>
-    <td>Strapi content types for conversations, messages, images, videos, and users.</td>
-  </tr>
-  <tr>
-    <td><b>🛡️ Secret Safe</b></td>
-    <td>Environment files are ignored and never committed. Only safe example files are tracked.</td>
-  </tr>
-</table>
-
----
-
-## 🧩 Tech Stack
-
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=next,react,ts,tailwind,nodejs,github,vercel" alt="frontend stack" />
-<br />
-<img src="https://img.shields.io/badge/Next.js-16.2.4-black?style=for-the-badge&logo=nextdotjs" alt="Next.js" />
-<img src="https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=000" alt="React" />
-<img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=fff" alt="TypeScript" />
-<img src="https://img.shields.io/badge/TailwindCSS-4.x-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=000" alt="Tailwind" />
-<img src="https://img.shields.io/badge/Strapi-5.43.0-4945FF?style=for-the-badge&logo=strapi&logoColor=fff" alt="Strapi" />
-<img src="https://img.shields.io/badge/HuggingFace-Inference-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000" alt="Hugging Face" />
-<img src="https://img.shields.io/badge/Google_GenAI-Veo-4285F4?style=for-the-badge&logo=google&logoColor=fff" alt="Google GenAI" />
+| AI Chat                      | Image AI                   | Video AI                         | Code Assistant                |
+| ---------------------------- | -------------------------- | -------------------------------- | ----------------------------- |
+| Smart conversation workspace | Prompt-to-image generation | Google Veo video flow            | Developer-focused coding help |
+| Saved conversations          | Saved generations          | Duration + aspect ratio controls | Useful for snippets and logic |
+| Strapi storage               | Hugging Face model support | Billing-aware error handling     | Modern SaaS dashboard         |
 
 </div>
 
 ---
 
-## 🏗️ Repository Structure
+## 🎯 Main Features
 
-```txt
-Ai-SaaS/
-├── frontend/          # Next.js 16 + React 19 AI SaaS frontend
-├── strapi-ai-saas/    # Strapi 5 backend for auth, images, videos, chat data
-├── ClipForge/         # Preserved Strapi scaffold / experimental setup
-├── SETUP_NOTES.md     # Local setup reference
-├── .gitignore         # Secure ignore rules
-└── README.md          # Project documentation
+### 🔐 Authentication System
+
+* User registration and login
+* JWT-based authentication with Strapi
+* Secure HTTP-only cookies
+* Protected dashboard routes
+* Auth state refresh and route protection
+
+### 🤖 AI Chat Workspace
+
+* Conversational AI interface
+* User and assistant message roles
+* Conversation storage through Strapi
+* Clean dashboard UI
+
+### 🖼️ AI Image Generation
+
+* Prompt-based image generation
+* Hugging Face inference integration
+* Generated image preview
+* Saved image records in Strapi
+* Gallery support for previous generations
+
+### 🎬 AI Video Generation
+
+* Google GenAI / Veo workflow
+* Aspect ratio options: `16:9`, `9:16`
+* Duration options: `4s`, `6s`, `8s`
+* Long-running API route support
+* Vercel Hobby compatible timeout handling
+* Billing error handling for Google Veo
+
+### 💻 Code Assistant
+
+* AI-assisted coding support
+* Useful for snippets, debugging, and project planning
+* Dashboard-based workflow
+
+### 📊 Dashboard
+
+* Protected workspace
+* Sidebar navigation
+* AI tool cards
+* Modern dark SaaS UI
+* Responsive layout
+
+---
+
+## 🧠 Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=nextjs,react,typescript,tailwind,nodejs,vercel,postgres,github" />
+
+</div>
+
+<br />
+
+| Layer           | Technology                                         |
+| --------------- | -------------------------------------------------- |
+| Frontend        | Next.js 16, React 19, TypeScript                   |
+| Styling         | Tailwind CSS v4, shadcn/ui, Lucide Icons           |
+| Backend CMS     | Strapi 5                                           |
+| Auth            | Strapi Users & Permissions, JWT, HTTP-only cookies |
+| Database        | PostgreSQL                                         |
+| AI Image        | Hugging Face Inference                             |
+| AI Video        | Google GenAI / Veo                                 |
+| Deployment      | Vercel + Render                                    |
+| Package Manager | npm                                                |
+
+---
+
+## 🧩 Architecture
+
+```mermaid
+flowchart TD
+    A[User Browser] --> B[Next.js Frontend on Vercel]
+    B --> C[Next.js API Routes]
+    C --> D[Strapi Backend on Render]
+    D --> E[(PostgreSQL Database)]
+
+    C --> F[Hugging Face Inference]
+    C --> G[Google GenAI / Veo]
+
+    D --> H[Users]
+    D --> I[Conversations]
+    D --> J[Messages]
+    D --> K[Images]
+    D --> L[Videos]
 ```
 
 ---
 
-## ⚙️ Core Modules
+## 📁 Repository Structure
 
-### 1. Frontend — `frontend/`
-
-- Next.js App Router
-- Protected dashboard
-- Login and register pages
-- AI chat route
-- AI image generation route
-- AI video generation route
-- shadcn/ui + custom AI elements
-- Theme provider and premium UI components
-
-### 2. Backend — `strapi-ai-saas/`
-
-- Strapi 5 CMS backend
-- Users & Permissions plugin
-- Custom content types:
-  - `conversation`
-  - `message`
-  - `image`
-  - `video`
-- JWT authentication support
-- Production-ready backend structure
-
-### 3. AI Services
-
-| Feature | Provider | Status |
-|---|---|---|
-| AI Chat | Google AI SDK | Ready for API key |
-| Image Generation | Hugging Face Inference Providers | Working with correct HF token permission |
-| Video Generation | Google Veo | Requires Google Cloud billing |
-
-> ⚠️ Google Veo video generation uses `veo-2.0-generate-001`, which requires Google Cloud billing. The route is billing-aware and should return a clean billing message instead of crashing.
+```bash
+Ai-SaaS/
+├── frontend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   ├── chat/
+│   │   │   ├── image/
+│   │   │   └── videos/
+│   │   ├── dashboard/
+│   │   ├── login/
+│   │   ├── register/
+│   │   └── page.tsx
+│   ├── components/
+│   ├── lib/
+│   ├── public/
+│   ├── package.json
+│   └── next.config.ts
+│
+├── strapi-ai-saas/
+│   ├── config/
+│   ├── src/
+│   ├── database/
+│   ├── package.json
+│   └── .env.example
+│
+├── ClipForge/
+├── README.md
+└── SETUP_NOTES.md
+```
 
 ---
 
-## 🔐 Environment Variables
+## ⚙️ Environment Variables
 
-Never commit real `.env` files. Add values only locally or inside hosting dashboards such as Vercel, Render, Railway, or Strapi Cloud.
+### Frontend `.env.local`
 
-### Frontend — `frontend/.env`
+Create this file inside:
+
+```bash
+frontend/.env.local
+```
 
 ```env
-NEXT_PUBLIC_STRAPI_URL=http://localhost:1337
 STRAPI_URL=http://localhost:1337
-HUGGINGFACE_API_KEY=your_huggingface_token_here
-GOOGLE_GENERATIVE_AI_API_KEY=your_google_ai_key_here
+NEXT_PUBLIC_STRAPI_URL=http://localhost:1337
+
+HUGGINGFACE_API_KEY=your_huggingface_token
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_generative_ai_key
+
 NEXT_TELEMETRY_DISABLED=1
 ```
 
-### Backend — `strapi-ai-saas/.env`
+For production on Vercel:
+
+```env
+STRAPI_URL=https://your-render-backend-url.onrender.com
+NEXT_PUBLIC_STRAPI_URL=https://your-render-backend-url.onrender.com
+
+HUGGINGFACE_API_KEY=your_huggingface_token
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_generative_ai_key
+
+NEXT_TELEMETRY_DISABLED=1
+```
+
+---
+
+### Backend `.env`
+
+Create this file inside:
+
+```bash
+strapi-ai-saas/.env
+```
 
 ```env
 HOST=0.0.0.0
 PORT=1337
+NODE_ENV=development
+
 APP_KEYS=key1,key2,key3,key4
 API_TOKEN_SALT=your_api_token_salt
 ADMIN_JWT_SECRET=your_admin_jwt_secret
 TRANSFER_TOKEN_SALT=your_transfer_token_salt
 JWT_SECRET=your_jwt_secret
+
 DATABASE_CLIENT=sqlite
 DATABASE_FILENAME=.tmp/data.db
 ```
 
-Generate secure secrets:
+For production PostgreSQL:
 
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
+```env
+NODE_ENV=production
+HOST=0.0.0.0
+
+DATABASE_CLIENT=postgres
+DATABASE_URL=your_postgresql_database_url
+DATABASE_SSL=true
+DATABASE_SSL_REJECT_UNAUTHORIZED=false
+
+APP_KEYS=key1,key2,key3,key4
+API_TOKEN_SALT=your_api_token_salt
+ADMIN_JWT_SECRET=your_admin_jwt_secret
+TRANSFER_TOKEN_SALT=your_transfer_token_salt
+JWT_SECRET=your_jwt_secret
 ```
 
 ---
 
-## 🚀 Local Development
+## 🛠️ Local Setup
 
-### 1. Clone Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/UjjwalKumarKannojiya/Ai-SaaS.git
 cd Ai-SaaS
 ```
 
-### 2. Start Strapi Backend
+---
+
+### 2. Start Strapi backend
 
 ```bash
 cd strapi-ai-saas
@@ -181,15 +281,23 @@ npm install
 npm run develop
 ```
 
-Backend runs at:
+Backend will run on:
 
-```txt
+```bash
 http://localhost:1337
 ```
 
-### 3. Start Frontend
+Strapi Admin:
 
-Open a second terminal:
+```bash
+http://localhost:1337/admin
+```
+
+---
+
+### 3. Start Next.js frontend
+
+Open a new terminal:
 
 ```bash
 cd frontend
@@ -197,107 +305,230 @@ npm install
 npm run dev
 ```
 
-Frontend runs at:
+Frontend will run on:
 
-```txt
+```bash
 http://localhost:3000
 ```
 
 ---
 
-## 🧠 App Flow
+## 🚀 Deployment Guide
 
-```mermaid
-flowchart TD
-    A[User visits FluxForge] --> B{Authenticated?}
-    B -- No --> C[Login / Register]
-    C --> D[Strapi Auth]
-    D --> E[JWT Cookie]
-    B -- Yes --> F[Protected Dashboard]
-    F --> G[AI Chat]
-    F --> H[Image Generator]
-    F --> I[Video Generator]
-    G --> J[AI Provider]
-    H --> K[Hugging Face Inference]
-    I --> L[Google Veo API]
-    K --> M[Save media locally]
-    L --> M
-    M --> N[Create Strapi Record]
-    N --> O[Show result in UI]
-```
+### Frontend Deployment — Vercel
 
----
-
-## 📦 Scripts
-
-### Frontend
+Use these settings:
 
 ```bash
-cd frontend
-npm run dev      # Start development server
-npm run build    # Production build
-npm run start    # Start production server
-npm run lint     # Run linting
+Framework Preset: Next.js
+Root Directory: frontend
+Install Command: npm install
+Build Command: npm run build
+Output Directory: Default
+Production Branch: main
 ```
 
-### Backend
+Required Vercel environment variables:
+
+```env
+STRAPI_URL=https://your-render-backend-url.onrender.com
+NEXT_PUBLIC_STRAPI_URL=https://your-render-backend-url.onrender.com
+HUGGINGFACE_API_KEY=your_huggingface_token
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_key
+NEXT_TELEMETRY_DISABLED=1
+```
+
+---
+
+### Backend Deployment — Render
+
+Use these settings:
 
 ```bash
-cd strapi-ai-saas
-npm run develop  # Start Strapi in development mode
-npm run build    # Build Strapi admin
-npm run start    # Start Strapi production server
+Root Directory: strapi-ai-saas
+Build Command: npm install && npm run build
+Start Command: npm run start
+```
+
+Important:
+
+```bash
+Do not use npm run develop in production.
+```
+
+Required Render environment variables:
+
+```env
+NODE_ENV=production
+HOST=0.0.0.0
+
+DATABASE_CLIENT=postgres
+DATABASE_URL=your_postgres_connection_string
+DATABASE_SSL=true
+DATABASE_SSL_REJECT_UNAUTHORIZED=false
+
+APP_KEYS=key1,key2,key3,key4
+API_TOKEN_SALT=your_api_token_salt
+ADMIN_JWT_SECRET=your_admin_jwt_secret
+TRANSFER_TOKEN_SALT=your_transfer_token_salt
+JWT_SECRET=your_jwt_secret
 ```
 
 ---
 
-## 🌍 Deployment Plan
+## 🔧 Important Fixes Completed During Deployment
 
-| Layer | Recommended Platform | Notes |
-|---|---|---|
-| Frontend | Vercel | Set frontend environment variables in Vercel dashboard |
-| Backend | Render / Railway / Strapi Cloud | Use production env variables, do not commit secrets |
-| Database | PostgreSQL | Better than SQLite for production |
-| Media | S3 / Cloudinary / Provider storage | Local uploads are not ideal for production |
+This project went through real production debugging and deployment fixes:
 
----
-
-## 🧪 Production Checklist
-
-- [ ] Replace local Strapi URL with deployed backend URL
-- [ ] Add all frontend secrets to Vercel Environment Variables
-- [ ] Add all backend secrets to backend hosting dashboard
-- [ ] Use PostgreSQL for Strapi production database
-- [ ] Configure CORS for frontend domain
-- [ ] Enable HTTPS on both frontend and backend
-- [ ] Test auth flow after deployment
-- [ ] Test image generation with Hugging Face token
-- [ ] Keep Google Veo disabled or billing-gated unless GCP billing is enabled
-- [ ] Confirm `.env`, `.env.local`, `.tmp`, `.next`, `node_modules` are not committed
+| Issue                                    | Fix                                                                 |
+| ---------------------------------------- | ------------------------------------------------------------------- |
+| Vercel showing 404                       | Created clean Vercel project with correct `frontend` root directory |
+| Vercel Hobby maxDuration error           | Reduced video API max duration to Hobby-compatible value            |
+| `/api/videos` build issue                | Separated video list route from video generation route              |
+| Strapi URL using localhost in production | Switched Strapi base URL to environment variables                   |
+| Render running development server        | Changed production start command to `npm run start`                 |
+| PostgreSQL production support            | Added `pg` driver for Strapi production database                    |
+| Login/register 500 errors                | Connected frontend API routes to deployed Strapi backend            |
+| Landing page looked basic                | Rebuilt `/` with polished animated SaaS landing page                |
 
 ---
 
-## 🛡️ Security Notes
+## 🧪 API Route Overview
 
-```txt
-✅ Real API keys are not stored in GitHub
-✅ .env and .env.local are ignored
-✅ Build outputs and dependency folders are ignored
-✅ Generated media folders are ignored
-✅ Only safe .env.example files are allowed
+| Route                  | Purpose                      |
+| ---------------------- | ---------------------------- |
+| `/api/auth/register`   | Register user through Strapi |
+| `/api/auth/login`      | Login user through Strapi    |
+| `/api/auth/logout`     | Clear auth cookie            |
+| `/api/chat`            | AI chat route                |
+| `/api/image`           | List saved image records     |
+| `/api/image/generate`  | Generate and save AI images  |
+| `/api/videos`          | List saved video records     |
+| `/api/videos/generate` | Generate and save AI videos  |
+
+---
+
+## 🧱 Strapi Collections
+
+Recommended Strapi content types used by the app:
+
+```bash
+User
+Conversation
+Message
+Image
+Video
+```
+
+Example fields:
+
+### Conversation
+
+```bash
+title: string
+messages: relation
+```
+
+### Message
+
+```bash
+content: text
+role: enum user | assistant
+conversation: relation
+```
+
+### Image
+
+```bash
+prompt: text
+imageUrl: string
+```
+
+### Video
+
+```bash
+prompt: text
+videoUrl: string
 ```
 
 ---
 
-## 📸 Preview
+## 🧑‍💻 UI Preview
 
-> Add screenshots or demo GIFs here after deployment.
+<div align="center">
 
-```txt
-Dashboard Preview: coming soon
-Image Generator Preview: coming soon
-Video Workflow Preview: coming soon
-```
+<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=gradient" width="100%" />
+
+### Landing Page
+
+Modern animated SaaS landing page with:
+
+* Animated hero section
+* Floating dashboard preview
+* Gradient background
+* Smooth hover cards
+* Responsive CTA section
+
+### Dashboard
+
+Protected user workspace with:
+
+* Chat
+* Image generation
+* Video generation
+* Code assistant
+* Saved records
+
+<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=gradient" width="100%" />
+
+</div>
+
+---
+
+## 🔐 Security Notes
+
+* `.env` files are ignored and should never be committed.
+* API keys must be stored only in Vercel/Render environment variables.
+* JWT is stored in HTTP-only cookies.
+* Strapi admin secrets must be generated securely.
+* Production backend should always use PostgreSQL instead of local SQLite.
+
+---
+
+## 🧭 Roadmap
+
+* [x] Next.js frontend setup
+* [x] Strapi backend setup
+* [x] Authentication flow
+* [x] AI image generation
+* [x] AI video generation route
+* [x] Vercel deployment
+* [x] Render deployment setup
+* [x] Animated landing page
+* [ ] User billing and subscription plans
+* [ ] Usage limits per user
+* [ ] Better analytics dashboard
+* [ ] File upload support
+* [ ] AI history search
+* [ ] Admin monitoring panel
+* [ ] Production logging and error tracking
+
+---
+
+## 🧠 Learning Outcomes
+
+This project demonstrates:
+
+* Full-stack SaaS architecture
+* Next.js App Router API routes
+* Secure auth with cookies
+* Strapi CMS integration
+* PostgreSQL production deployment
+* AI API integration
+* Vercel + Render deployment flow
+* Debugging real production errors
+* Environment variable management
+* Modern SaaS UI/UX design
 
 ---
 
@@ -305,10 +536,16 @@ Video Workflow Preview: coming soon
 
 <div align="center">
 
-<b>Ujjwal Kumar Kannojiya</b>
+### Ujjwal Kumar Kannojiya
 
-<a href="https://github.com/UjjwalKumarKannojiya"><img src="https://img.shields.io/badge/GitHub-UjjwalKumarKannojiya-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
-<a href="https://www.linkedin.com/in/ujjwal-kannojiya-78744723a/"><img src="https://img.shields.io/badge/LinkedIn-Ujjwal%20Kannojiya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=fff" alt="LinkedIn" /></a>
+Full-Stack Developer • MCA DS & AI Student • AI SaaS Builder
+
+<a href="https://github.com/UjjwalKumarKannojiya">
+  <img src="https://img.shields.io/badge/GitHub-UjjwalKumarKannojiya-111827?style=for-the-badge&logo=github" />
+</a>
+<a href="https://www.linkedin.com/in/ujjwal-kannojiya-78744723a/">
+  <img src="https://img.shields.io/badge/LinkedIn-Ujjwal%20Kannojiya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
 
 </div>
 
@@ -316,8 +553,10 @@ Video Workflow Preview: coming soon
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:06b6d4,50:7c3aed,100:09090b&section=footer&animation=fadeIn" alt="footer wave" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=900&color=06B6D4&center=true&vCenter=true&width=850&lines=Built+with+Next.js%2C+Strapi%2C+Tailwind%2C+Hugging+Face%2C+and+Google+GenAI.;Designed+as+a+production-ready+AI+SaaS+project.;If+you+like+this+project%2C+give+it+a+star+%E2%AD%90" />
 
-<b>⭐ Star this repository if you like the project.</b>
+<br />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:06b6d4,50:7c3aed,100:0f172a" width="100%" />
 
 </div>
