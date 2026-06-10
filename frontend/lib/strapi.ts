@@ -1,4 +1,10 @@
-const DEFAULT_STRAPI_URL = "http://localhost:1337";
+const DEFAULT_STRAPI_URL =
+  process.env.STRAPI_URL ??
+  process.env.NEXT_PUBLIC_STRAPI_URL ??
+  "http://localhost:1337";
+
+const STRAPI_URL = DEFAULT_STRAPI_URL.replace(/\/$/, "");
+
 export const AUTH_COOKIE_NAME = "strapi_jwt";
 
 export type StrapiUser = {
@@ -13,18 +19,21 @@ export type StrapiAuthResponse = {
 };
 
 export class StrapiError extends Error {
-  staus: number;
-  constructor(message: string, status: number) {
+  status: number;
+  details?: unknown;
+
+  constructor(message: string, status: number, details?: unknown) {
     super(message);
     this.name = "StrapiError";
-    this.staus = status;
+    this.status = status;
+    this.details = details;
   }
 }
 
 async function strapiFetch<T>(
   path: string,
   init: RequestInit = {},
-  jwt?: string,
+  jwt?: string
 ) {
   const headers = new Headers(init.headers);
 
@@ -36,7 +45,7 @@ async function strapiFetch<T>(
     headers.set("Authorization", `Bearer ${jwt}`);
   }
 
-  const response = await fetch(`${DEFAULT_STRAPI_URL}${path}`, {
+  const response = await fetch(`${STRAPI_URL}${path}`, {
     ...init,
     headers,
     cache: "no-store",
@@ -45,7 +54,11 @@ async function strapiFetch<T>(
   const data = await response.json().catch(() => null);
 
   if (!response.ok) {
-    throw new StrapiError("Strapi request failed", response.status);
+    throw new StrapiError(
+      data?.error?.message ?? data?.message ?? "Strapi request failed",
+      response.status,
+      data
+    );
   }
 
   return data as T;
@@ -54,7 +67,7 @@ async function strapiFetch<T>(
 export function registerWithStrapi(
   username: string,
   email: string,
-  password: string,
+  password: string
 ) {
   return strapiFetch<StrapiAuthResponse>("/api/auth/local/register", {
     method: "POST",
@@ -73,7 +86,7 @@ export function fetchCurrentUser(jwt: string) {
   return strapiFetch<StrapiUser>("/api/users/me", {}, jwt);
 }
 
-// ---- Conversation ----\\
+// ---- Conversation ----
 
 type One<T> = {
   data: T;
@@ -86,7 +99,7 @@ type Many<T> = {
 async function strapiCreate<T>(
   jwt: string,
   path: string,
-  fields: Record<string, unknown>,
+  fields: Record<string, unknown>
 ) {
   const res = await strapiFetch<One<T>>(
     path,
@@ -94,7 +107,7 @@ async function strapiCreate<T>(
       method: "POST",
       body: JSON.stringify({ data: fields }),
     },
-    jwt,
+    jwt
   );
 
   return res.data;
@@ -103,7 +116,7 @@ async function strapiCreate<T>(
 async function strapiList<T>(
   jwt: string,
   path: string,
-  pageSize: string,
+  pageSize: string
 ): Promise<T[]> {
   const q = new URLSearchParams({
     sort: "createdAt:desc",
@@ -114,7 +127,6 @@ async function strapiList<T>(
 
   return res.data;
 }
-
 
 export type ChatRole = "user" | "assistant";
 
@@ -136,27 +148,22 @@ export type StrapiConversation = {
 };
 
 export function createConversation(
-    jwt:string,
-    params:{title:string}
-):Promise<StrapiConversation>{
-    return strapiCreate(jwt , "/api/conversations" , {title:params.title})
+  jwt: string,
+  params: { title: string }
+): Promise<StrapiConversation> {
+  return strapiCreate(jwt, "/api/conversations", {
+    title: params.title,
+  });
 }
 
-export async function getConversation(
-    jwt:string,
-    documentId:string
-){
-    try {
-        const res = await strapiFetch<One<StrapiConversation>>(
-            `/api/conversations/${encodeURIComponent(documentId)}`,
-            {},
-            jwt
-        );
+export async function getConversation(jwt: string, documentId: string) {
+  const res = await strapiFetch<One<StrapiConversation>>(
+    `/api/conversations/${encodeURIComponent(documentId)}`,
+    {},
+    jwt
+  );
 
-        return res.data
-    } catch (error) {
-        throw error;
-    }
+  return res.data;
 }
 
 export function createMessage(
@@ -171,6 +178,7 @@ export function createMessage(
 }
 
 // ------------ Images and Videos -------------
+
 export type StrapiImageRecord = {
   id: number;
   documentId: string;
@@ -180,21 +188,19 @@ export type StrapiImageRecord = {
   updatedAt: string;
 };
 
-
 export function createImageRecord(
   jwt: string,
-  params:{prompt: string , imageUrl: string}
-):Promise<StrapiImageRecord>{
-  return strapiCreate(jwt , "/api/images" , {
+  params: { prompt: string; imageUrl: string }
+): Promise<StrapiImageRecord> {
+  return strapiCreate(jwt, "/api/images", {
     prompt: params.prompt,
-    imageUrl: params.imageUrl
-  })
+    imageUrl: params.imageUrl,
+  });
 }
 
 export function listImageRecords(jwt: string): Promise<StrapiImageRecord[]> {
   return strapiList(jwt, "/api/images", "24");
 }
-
 
 export type StrapiVideoRecord = {
   id: number;
@@ -213,6 +219,11 @@ export function createVideoRecord(
     prompt: params.prompt,
     videoUrl: params.videoUrl,
   });
+}
+
+export function listVideoRecords(jwt: string): Promise<StrapiVideoRecord[]> {
+  return strapiList(jwt, "/api/videos", "24");
+}
 }
 
 
