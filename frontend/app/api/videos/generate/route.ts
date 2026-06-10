@@ -7,7 +7,7 @@ import { getAuthToken, getCurrentUser } from "@/lib/auth";
 import { createVideoRecord } from "@/lib/strapi";
 
 export const runtime = "nodejs";
-export const maxDuration = 600;
+export const maxDuration = 300;
 
 const VIDEO_MODEL = "veo-2.0-generate-001";
 
@@ -18,7 +18,7 @@ const ASPECT_RATIOS: GoogleVideoAspectRatio[] = ["16:9", "9:16"];
 const DURATIONS: GoogleVideoDuration[] = [4, 6, 8];
 
 const POLL_INTERVAL_MS = 10_000;
-const MAX_POLLS = 60;
+const MAX_POLLS = 25;
 
 function parseAspectRatio(value: unknown): GoogleVideoAspectRatio {
   if (
