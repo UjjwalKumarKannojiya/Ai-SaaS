@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { getAuthToken, getCurrentUser } from "@/lib/auth";
 import { createVideoRecord, StrapiError } from "@/lib/strapi";
 
-export const maxDuration = 300;
+export const maxDuration = 200;
 
 const VIDEO_MODEL = "veo-3.1-generate-preview"
 
